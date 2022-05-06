@@ -11,6 +11,8 @@ const NewTest = () => {
 }
 const commit2 = "ne w commit"
 const test2 = "3r d branch"
+const commit3 = "new commit"
+const test45 = "new commit in test1"
 
 function App() {
   return (
