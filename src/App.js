@@ -8,7 +8,7 @@ const NewTest = () => {
     <button>Test1</button>
   )
 }
-const commit2 = "new commit"
+const commit2 = "ne w commit"
 
 function App() {
   return (
