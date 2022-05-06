@@ -6,9 +6,11 @@ import reportWebVitals from './reportWebVitals';
 import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import userReducer from './feature/user';
+import toggleReducer from './feature/toogle'
 const store = configureStore({
   reducer:{
-    user:userReducer
+    user:userReducer,
+    toggle:toggleReducer
   }
 })
 const root = ReactDOM.createRoot(document.getElementById('root'));
