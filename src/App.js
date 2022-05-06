@@ -10,6 +10,7 @@ const NewTest = () => {
 }
 const commit2 = "ne w commit"
 const test2 = "3r d branch"
+const test3 = "after merging"
 
 function App() {
   return (
