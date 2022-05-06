@@ -2,9 +2,7 @@ import './App.css';
 import Login from './components/Login';
 import { Profile } from './components/Profile';
 import ToggleButton from './components/ToggleButton';
-<<<<<<< HEAD
 const mastercommit = "making a commit in the master branch after test 1 commits"
-=======
 
 const NewTest = () => {
   return (
@@ -14,7 +12,6 @@ const NewTest = () => {
 const commit2 = "ne w commit"
 const test2 = "3r d branch"
 
->>>>>>> test2
 function App() {
   return (
     <div className="App">
