@@ -9,7 +9,7 @@ const NewTest = () => {
   )
 }
 const commit2 = "ne w commit"
-const test2 = "3rd branch"
+const test2 = "3r d branch"
 
 function App() {
   return (
