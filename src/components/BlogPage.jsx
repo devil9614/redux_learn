@@ -17,11 +17,21 @@ const Data = [
 ];
 
 const BlogPage = () => {
-  return (<div style = {{border:"solid",borderWidth:1,borderColor:"black",padding:10,width:"50vw"}}>
+  return (
+    <div
+      style={{
+        border: "solid",
+        borderWidth: 1,
+        borderColor: "black",
+        padding: 10,
+        width: "50vw",
+      }}
+    >
       {Data.map((comment) => (
-          <Comment comment = {comment?.text}/>
+        <Comment key={comment.id} comment={comment?.text} />
       ))}
-  </div>);
+    </div>
+  );
 };
 
 export default BlogPage;

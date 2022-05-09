@@ -1,6 +1,8 @@
+import { useSelector } from 'react-redux';
 import './App.css';
 import BlogPage from './components/BlogPage';
 import Login from './components/Login';
+import LoginButton from './components/LoginButton';
 import { Profile } from './components/Profile';
 import ToggleButton from './components/ToggleButton';
 const mastercommit = "making a commit in the master branch after test 1 commits"
@@ -10,19 +12,17 @@ const NewTest = () => {
     <button>Test1</button>
   )
 }
-const commit2 = "ne w commit"
-const test2 = "3r d branch"
-const commit3 = "new commit"
-const test45 = "new commit in test1"
 
 function App() {
+  const isAuth = useSelector((state) => state.auth.value)
   return (
     <div className="App">
-      <NewTest/>
+      {/* <NewTest/>
       <ToggleButton/>
-      <Profile/>
-      <Login/>
-      <BlogPage/>
+      <Profile/> */}
+      {/* <Login/> */}
+      <LoginButton/>
+      {isAuth && <BlogPage />}
     </div>
   );
 }

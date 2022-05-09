@@ -7,10 +7,12 @@ import { configureStore } from '@reduxjs/toolkit';
 import { Provider } from 'react-redux';
 import userReducer from './feature/user';
 import toggleReducer from './feature/toogle'
+import authReducer from './feature/auth'
 const store = configureStore({
   reducer:{
     user:userReducer,
-    toggle:toggleReducer
+    toggle:toggleReducer,
+    auth:authReducer
   }
 })
 const root = ReactDOM.createRoot(document.getElementById('root'));
