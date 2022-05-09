@@ -1,4 +1,5 @@
 import './App.css';
+import BlogPage from './components/BlogPage';
 import Login from './components/Login';
 import { Profile } from './components/Profile';
 import ToggleButton from './components/ToggleButton';
@@ -21,6 +22,7 @@ function App() {
       <ToggleButton/>
       <Profile/>
       <Login/>
+      <BlogPage/>
     </div>
   );
 }
