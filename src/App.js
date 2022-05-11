@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 import { useSelector } from "react-redux";
 import "./App.css";
+import ErrorBoundary from "./feature/ErrorBoundary";
 // import BlogPage from './components/BlogPage';
 // import LoginButton from './components/LoginButton';
 const BlogPage = lazy(() => import("./components/BlogPage"));
@@ -16,12 +17,15 @@ const LoginButton = lazy(() => import("./components/LoginButton"));
 function App() {
   const isAuth = useSelector((state) => state.auth.value);
   return (
-    <div className="App">
+    <ErrorBoundary>
+      <div className="App">
       <Suspense fallback = {<h3>Loading...</h3>}>
-        <LoginButton />
+        <ErrorBoundary><LoginButton /></ErrorBoundary>
         {isAuth && <BlogPage />}
       </Suspense>
     </div>
+    </ErrorBoundary>
+    
   );
 }
 

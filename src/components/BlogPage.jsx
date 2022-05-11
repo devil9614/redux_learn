@@ -17,6 +17,7 @@ const Data = [
 ];
 
 const BlogPage = () => {
+  // throw Error("Testing")
   return (
     <div
       style={{
